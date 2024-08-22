@@ -9,21 +9,38 @@
 /* Begin PBXBuildFile section */
 		11EECD732C76B6CC00CDB712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD722C76B6CC00CDB712 /* AppDelegate.swift */; };
 		11EECD752C76B6CC00CDB712 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD742C76B6CC00CDB712 /* SceneDelegate.swift */; };
-		11EECD772C76B6CC00CDB712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD762C76B6CC00CDB712 /* ViewController.swift */; };
-		11EECD7A2C76B6CC00CDB712 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 11EECD792C76B6CC00CDB712 /* Base */; };
+		11EECD772C76B6CC00CDB712 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD762C76B6CC00CDB712 /* HomeViewController.swift */; };
 		11EECD7C2C76B6CD00CDB712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EECD7B2C76B6CD00CDB712 /* Assets.xcassets */; };
 		11EECD7F2C76B6CD00CDB712 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 11EECD7E2C76B6CD00CDB712 /* Base */; };
+		11EECD882C76B72A00CDB712 /* ConstraintKit in Frameworks */ = {isa = PBXBuildFile; productRef = 11EECD872C76B72A00CDB712 /* ConstraintKit */; };
+		11EECD8A2C76B77F00CDB712 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD892C76B77F00CDB712 /* NetworkConstants.swift */; };
+		11EECD8D2C76B81100CDB712 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 11EECD8C2C76B81100CDB712 /* YouTubeiOSPlayerHelper */; };
+		11EECD912C76BA1900CDB712 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD902C76BA1900CDB712 /* HomeViewModel.swift */; };
+		11EECD942C76BA5F00CDB712 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD932C76BA5F00CDB712 /* Video.swift */; };
+		11EECD972C76BA9400CDB712 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD962C76BA9400CDB712 /* NetworkHandler.swift */; };
+		11EECD992C76BB6000CDB712 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD982C76BB6000CDB712 /* NetworkError.swift */; };
+		11EECD9C2C76BB8D00CDB712 /* ProjectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD9B2C76BB8D00CDB712 /* ProjectError.swift */; };
+		11EECD9F2C76BDED00CDB712 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECD9E2C76BDED00CDB712 /* UIViewController+Alerts.swift */; };
+		11EECDA42C76C52400CDB712 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EECDA32C76C52400CDB712 /* VideoCollectionViewCell.swift */; };
+		11EECDA72C76C95900CDB712 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 11EECDA62C76C95900CDB712 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11EECD6F2C76B6CC00CDB712 /* SmartSign Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartSign Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EECD722C76B6CC00CDB712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EECD742C76B6CC00CDB712 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11EECD762C76B6CC00CDB712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		11EECD792C76B6CC00CDB712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11EECD762C76B6CC00CDB712 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		11EECD7B2C76B6CD00CDB712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11EECD7E2C76B6CD00CDB712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11EECD802C76B6CD00CDB712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11EECD892C76B77F00CDB712 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		11EECD902C76BA1900CDB712 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		11EECD932C76BA5F00CDB712 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		11EECD962C76BA9400CDB712 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		11EECD982C76BB6000CDB712 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		11EECD9B2C76BB8D00CDB712 /* ProjectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectError.swift; sourceTree = "<group>"; };
+		11EECD9E2C76BDED00CDB712 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		11EECDA32C76C52400CDB712 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EECDA72C76C95900CDB712 /* Kingfisher in Frameworks */,
+				11EECD882C76B72A00CDB712 /* ConstraintKit in Frameworks */,
+				11EECD8D2C76B81100CDB712 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +78,68 @@
 			children = (
 				11EECD722C76B6CC00CDB712 /* AppDelegate.swift */,
 				11EECD742C76B6CC00CDB712 /* SceneDelegate.swift */,
-				11EECD762C76B6CC00CDB712 /* ViewController.swift */,
-				11EECD782C76B6CC00CDB712 /* Main.storyboard */,
+				11EECD9D2C76BDE400CDB712 /* Extensions */,
+				11EECD9A2C76BB7400CDB712 /* Errors */,
+				11EECD922C76BA5B00CDB712 /* Model */,
+				11EECD8E2C76BA0C00CDB712 /* Scenes */,
+				11EECD952C76BA8B00CDB712 /* Network */,
 				11EECD7B2C76B6CD00CDB712 /* Assets.xcassets */,
 				11EECD7D2C76B6CD00CDB712 /* LaunchScreen.storyboard */,
 				11EECD802C76B6CD00CDB712 /* Info.plist */,
 			);
 			path = "SmartSign Dictionary";
+			sourceTree = "<group>";
+		};
+		11EECD8E2C76BA0C00CDB712 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				11EECD8F2C76BA1100CDB712 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		11EECD8F2C76BA1100CDB712 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				11EECD762C76B6CC00CDB712 /* HomeViewController.swift */,
+				11EECD902C76BA1900CDB712 /* HomeViewModel.swift */,
+				11EECDA32C76C52400CDB712 /* VideoCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		11EECD922C76BA5B00CDB712 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11EECD932C76BA5F00CDB712 /* Video.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11EECD952C76BA8B00CDB712 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				11EECD892C76B77F00CDB712 /* NetworkConstants.swift */,
+				11EECD962C76BA9400CDB712 /* NetworkHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		11EECD9A2C76BB7400CDB712 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				11EECD982C76BB6000CDB712 /* NetworkError.swift */,
+				11EECD9B2C76BB8D00CDB712 /* ProjectError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		11EECD9D2C76BDE400CDB712 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11EECD9E2C76BDED00CDB712 /* UIViewController+Alerts.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +158,11 @@
 			dependencies = (
 			);
 			name = "SmartSign Dictionary";
+			packageProductDependencies = (
+				11EECD872C76B72A00CDB712 /* ConstraintKit */,
+				11EECD8C2C76B81100CDB712 /* YouTubeiOSPlayerHelper */,
+				11EECDA62C76C95900CDB712 /* Kingfisher */,
+			);
 			productName = "SmartSign Dictionary";
 			productReference = 11EECD6F2C76B6CC00CDB712 /* SmartSign Dictionary.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +191,11 @@
 				Base,
 			);
 			mainGroup = 11EECD662C76B6CC00CDB712;
+			packageReferences = (
+				11EECD862C76B72A00CDB712 /* XCRemoteSwiftPackageReference "ConstraintKit" */,
+				11EECD8B2C76B81100CDB712 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+				11EECDA52C76C95900CDB712 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 11EECD702C76B6CC00CDB712 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +212,6 @@
 			files = (
 				11EECD7C2C76B6CD00CDB712 /* Assets.xcassets in Resources */,
 				11EECD7F2C76B6CD00CDB712 /* Base in Resources */,
-				11EECD7A2C76B6CC00CDB712 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +222,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11EECD772C76B6CC00CDB712 /* ViewController.swift in Sources */,
+				11EECDA42C76C52400CDB712 /* VideoCollectionViewCell.swift in Sources */,
+				11EECD8A2C76B77F00CDB712 /* NetworkConstants.swift in Sources */,
+				11EECD992C76BB6000CDB712 /* NetworkError.swift in Sources */,
+				11EECD942C76BA5F00CDB712 /* Video.swift in Sources */,
+				11EECD9F2C76BDED00CDB712 /* UIViewController+Alerts.swift in Sources */,
+				11EECD772C76B6CC00CDB712 /* HomeViewController.swift in Sources */,
 				11EECD732C76B6CC00CDB712 /* AppDelegate.swift in Sources */,
+				11EECD9C2C76BB8D00CDB712 /* ProjectError.swift in Sources */,
+				11EECD912C76BA1900CDB712 /* HomeViewModel.swift in Sources */,
 				11EECD752C76B6CC00CDB712 /* SceneDelegate.swift in Sources */,
+				11EECD972C76BA9400CDB712 /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11EECD782C76B6CC00CDB712 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11EECD792C76B6CC00CDB712 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11EECD7D2C76B6CD00CDB712 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -297,9 +381,9 @@
 				INFOPLIST_FILE = "SmartSign Dictionary/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +409,9 @@
 				INFOPLIST_FILE = "SmartSign Dictionary/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +447,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11EECD862C76B72A00CDB712 /* XCRemoteSwiftPackageReference "ConstraintKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eshwavin/ConstraintKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		11EECD8B2C76B81100CDB712 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+		11EECDA52C76C95900CDB712 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11EECD872C76B72A00CDB712 /* ConstraintKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EECD862C76B72A00CDB712 /* XCRemoteSwiftPackageReference "ConstraintKit" */;
+			productName = ConstraintKit;
+		};
+		11EECD8C2C76B81100CDB712 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EECD8B2C76B81100CDB712 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+		11EECDA62C76C95900CDB712 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11EECDA52C76C95900CDB712 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11EECD672C76B6CC00CDB712 /* Project object */;
 }

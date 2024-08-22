@@ -1,0 +1,33 @@
+{
+  "originHash" : "db1b6382170420069661392ff53d03f9268fee1558f088490b5c390912076797",
+  "pins" : [
+    {
+      "identity" : "constraintkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/eshwavin/ConstraintKit",
+      "state" : {
+        "revision" : "427a8d8b11e77e689ff800ff09f223b568a0b780",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "revision" : "2ef543ee21d63734e1c004ad6c870255e8716c50",
+        "version" : "7.12.0"
+      }
+    },
+    {
+      "identity" : "youtube-ios-player-helper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/youtube/youtube-ios-player-helper",
+      "state" : {
+        "revision" : "f57129cd4380ec0a74dd3a59da3270a1d653d59b",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 3
+}
