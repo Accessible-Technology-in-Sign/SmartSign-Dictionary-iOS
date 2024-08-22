@@ -32,6 +32,7 @@ final class VideoCollectionViewCell: UICollectionViewCell {
         label.font = UIFont.preferredFont(forTextStyle: .headline)
         label.textColor = .label
         label.textAlignment = .center
+        label.numberOfLines = 2
         return label
     }()
     

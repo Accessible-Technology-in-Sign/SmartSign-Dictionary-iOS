@@ -13,7 +13,6 @@ final class HomeViewController: UIViewController {
     // MARK: - Properties
     
     private let viewModel: HomeViewModel
-    
     private var videos: [Video] = []
     
     private lazy var collectionView: UICollectionView = {
@@ -28,6 +27,23 @@ final class HomeViewController: UIViewController {
     private let videoCellRegistration = UICollectionView.CellRegistration<VideoCollectionViewCell, Video> { cell, indexPath, video in
         cell.configure(with: video)
     }
+    
+    private let emptyView: UIView = {
+        let view = UIView()
+        
+        let label = UILabel()
+        label.textAlignment = .center
+        label.font = UIFont.preferredFont(forTextStyle: .title1)
+        label.textColor = .label
+        label.numberOfLines = 0
+        
+        label.text = String(localized: "Please type in a word or phrase in the search bar to start learning")
+        
+        view.addSubview(label)
+        label.pinAllEdges()
+        
+        return view
+    }()
     
     // MARK: - Init
     
@@ -67,6 +83,8 @@ final class HomeViewController: UIViewController {
         collectionView.pin(edges: .top(spacing: 0), .bottom(spacing: 0))
         collectionView.pin(edges: .leading(spacing: 0), .trailing(spacing: 0), to: view.readableContentGuide)
         
+        configureEmptyView()
+        
     }
     
     // MARK: CollectionViewSetup
@@ -84,6 +102,17 @@ final class HomeViewController: UIViewController {
         
         return UICollectionViewCompositionalLayout(section: section)
     }
+    
+    private func configureEmptyView() {
+        if videos.isEmpty {
+            view.addSubview(emptyView)
+            emptyView.pin(edges: .leading(spacing: 0), .trailing(spacing: 0), to: view.readableContentGuide)
+            emptyView.center()
+        }
+        else {
+            emptyView.removeFromSuperview()
+        }
+    }
 
 }
 
@@ -95,6 +124,7 @@ extension HomeViewController: UISearchBarDelegate {
         Task {
             do {
                 videos = try await viewModel.getVideoData(for: searchText)
+                configureEmptyView()
                 collectionView.reloadData()
             } catch {
                 showAlert(for: error)
