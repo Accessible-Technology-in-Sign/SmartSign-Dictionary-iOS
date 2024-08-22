@@ -30,7 +30,7 @@ final class NetworkHandler {
         
         if let statusCode = (urlResponse as? HTTPURLResponse)?.statusCode {
             guard statusCode == 200 else {
-                throw 
+                throw NetworkError.otherErrors(statusCode: statusCode)
             }
         }
         
