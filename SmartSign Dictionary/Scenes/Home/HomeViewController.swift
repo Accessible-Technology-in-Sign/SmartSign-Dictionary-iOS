@@ -116,6 +116,7 @@ final class HomeViewController: UIViewController {
 
 }
 
+// MARK: - UISearchBarDelegate Conformance
 extension HomeViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchText = searchBar.text else {

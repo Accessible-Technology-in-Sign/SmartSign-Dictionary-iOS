@@ -12,13 +12,15 @@ import YouTubeiOSPlayerHelper
 
 final class VideoCollectionViewCell: UICollectionViewCell {
     
+    private var videoId: String?
+    
+    // MARK: - UI Properties
+    
     private let videoPlayerView: YTPlayerView = {
         let playerView = YTPlayerView()
         playerView.setLoop(true)
         return playerView
     }()
-    
-    private var videoId: String?
     
     private let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
@@ -36,6 +38,8 @@ final class VideoCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    // MARK: - Init
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -45,6 +49,8 @@ final class VideoCollectionViewCell: UICollectionViewCell {
         super.init(coder: coder)
         setup()
     }
+    
+    // MARK: - Setup
     
     private func setup() {
         contentView.backgroundColor = .secondarySystemGroupedBackground
@@ -72,17 +78,19 @@ final class VideoCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    func configure(with video: Video) {
-        thumbnailImageView.kf.setImage(with: URL(string: video.thumbnailURL))
-        videoId = video.videoId
-        videoTitleLabel.text = video.title
-    }
-    
     override func prepareForReuse() {
-        super.prepareForReuse()
         UIView.transition(from: videoPlayerView, to: thumbnailImageView, duration: 0.01) { _ in
             self.thumbnailImageView.pin(edges: .leading(spacing: 0), .trailing(spacing: 0), .top(spacing: 0))
             self.thumbnailImageView.pinBottomToTop(of: self.videoTitleLabel, withSpacing: -12)
         }
+        super.prepareForReuse()
+    }
+    
+    // MARK: - Configure
+    
+    func configure(with video: Video) {
+        thumbnailImageView.kf.setImage(with: URL(string: video.thumbnailURL))
+        videoId = video.videoId
+        videoTitleLabel.text = video.title
     }
 }

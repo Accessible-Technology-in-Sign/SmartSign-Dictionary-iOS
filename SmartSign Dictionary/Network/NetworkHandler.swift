@@ -26,9 +26,13 @@ final class NetworkHandler {
         
         let urlRequest = URLRequest(url: url)
         
-        let (data, _) = try await URLSession.shared.data(for: urlRequest)
+        let (data, urlResponse) = try await URLSession.shared.data(for: urlRequest)
         
-        // TODO: Check for status code
+        if let statusCode = (urlResponse as? HTTPURLResponse)?.statusCode {
+            guard statusCode == 200 else {
+                throw 
+            }
+        }
         
         return data
     }
