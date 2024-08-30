@@ -122,6 +122,9 @@ extension HomeViewController: UISearchBarDelegate {
         guard let searchText = searchBar.text else {
             return
         }
+        
+        title = searchText
+        
         Task {
             do {
                 videos = try await viewModel.getVideoData(for: searchText)
